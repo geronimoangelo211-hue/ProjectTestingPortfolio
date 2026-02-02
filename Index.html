@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Doto:wght@100..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&family=Turret+Road:wght@200;300;400;500;700;800&family=Viga&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="MainCSS.css" />
+</head>
+<body>
+
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="Video/bg.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <div class="header-logo">
+            <img src="Image/Logo.jpeg" alt="Logo">
+            <div>MY <span>PORTFOLIO</span></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact" class="contact-icon"><img src="Image/Mailbox.png" alt="Contact"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="full-section">
+    <div class="home-flex-container">
+        
+        <div class="home-content">
+            <p class="pre-title" id="name-visual">Hi! I'm Markangelo T. Geronimo</p>
+            
+            <h1 class="home-title">
+                Creative
+                <br>
+                <span class="typing-text">Developer</span><span class="cursor">|</span>
+            </h1>
+            
+            <p class="home-desc typing-desc" data-text="Welcome to my digital portfolio! I’m excited to show you what I’ve been building. You’ll find everything you need to know about me here. Take a look around and let's connect!"></p>
+            
+            <div class="home-buttons">
+                <a href="path/to/cv.pdf" class="btn btn-primary" download>Download CV</a>
+                <a href="#about" class="btn btn-outline">More Information</a>
+                <a href="#contact" class="btn btn-circle contact-trigger" title="Contact Me">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="physics-wrapper" id="physics-wrapper">
+            <div id="lanyard-image"></div>
+
+            <div class="hanging-card" id="hanging-card">
+                <div class="clip-mechanismer">
+                    <div class="hook"></div>
+                    <div class="fastener"></div>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-glare"></div>
+                    
+                    <div class="card-content-visual">
+                        <div class="id-photo-frame">
+                            <img src="Image/Profile.jpg" alt="Profile" class="id-photo" draggable="false">
+                        </div>
+
+                        <div class="id-text-group">
+                            <h2 class="text-upper">FULL STACK</h2>
+                            <h1 class="text-main">DEVELOPER</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+        
+        <section id="about" class="full-section">
+    <div class="about-container">
+        
+        <div class="about-left-column">
+            
+            <div class="tilt-wrapper">
+                <div class="tilt-card" id="about-card">
+                    <div class="layer-1-bg"></div>
+                    <div class="layer-2-content">
+                        
+                        <img src="Image/Special.png" alt="Super" class="super-badge">
+
+                        <div class="l2-image-box">
+                            <img src="Image/LogoFullBodyProfile.png" alt="Profile">
+                            <div class="l2-glare"></div>
+                        </div>
+                        <div class="l2-text-box">
+                            <h2 class="card-name">MARKANGELO</h2>
+                            <p class="card-role">FULL STACK DEV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-quote-box">
+                <p>
+                    <span id="quote-text"></span><span class="cursor">|</span>
+                </p>
+            </div>
+
+        </div> 
+        <div class="about-text-box">
+            <h2 class="section-title">Who <span style="color:#00e676">Am I?</span></h2>
+            
+            <p class="about-static-intro">
+                Good Day! I'm <strong style="color:white">Markangelo T. Geronimo</strong>, The <strong style="color:#00e676">Developer</strong>.
+            </p>
+
+            <p class="about-typing-desc" 
+               data-text="I am a full-stack developer passionate about building modern, high-performance applications with an intuitive user experience. I enjoy working with the latest technologies like Artificial Intelligence, Machine Learning, and cloud-based development, blending creativity with precision to deliver impactful solutions. I'm committed to helping users and businesses grow in the digital era through functional, aesthetic, and scalable digital products."></p>
+            
+            <div class="about-stats" id="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number" id="count-exp" data-target="5">0</span>
+                    <span class="stat-label">Years of Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" id="count-proj" data-target="10">0</span>
+                    <span class="stat-label">Projects Finished</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about-bottom-container">
+    
+    <div class="about-bottom-container">
+        
+        <div class="skills-text">
+            <h4>Tool Languages Knowledges</h4>
+            <p>Hover to see my proficiency</p>
+        </div>
+
+        <div class="logo-carousel-track">
+            
+            <div class="logo-slide">
+                <img src="Image/LanguagesLogo/lua.png" alt="Tool">
+                <span class="percent">80%</span>
+            </div>
+            <div class="logo-slide">
+                <img src="Image/LanguagesLogo/python.png" alt="Tool">
+                <span class="percent">80%</span>
+            </div>
+            <div class="logo-slide">
+                <img src="Image/LanguagesLogo/css.png" alt="Tool">
+                <span class="percent">100%</span>
+            </div>
+            <div class="logo-slide">
+                <img src="Image/LanguagesLogo/php.png" alt="Tool">
+                <span class="percent">20%</span>
+            </div>
+            <div class="logo-slide">
+                <img src="Image/LanguagesLogo/html.png" alt="Tool">
+                <span class="percent">100%</span>
+            </div>
+            <div class="logo-slide">
+                <img src="Image/LanguagesLogo/csharp.png" alt="Tool">
+                <span class="percent">20%</span>
+            </div>
+            <div class="logo-slide">
+                <img src="Image/LanguagesLogo/javascript.png" alt="Tool">
+                <span class="percent">100%</span>
+            </div>
+            <div class="logo-slide">
+                <img src="Image/LanguagesLogo/java.png" alt="Tool">
+                <span class="percent">50%</span>
+            </div>
+            <div class="logo-slide">
+                <img src="Image/LanguagesLogo/perl.png" alt="Tool">
+                <span class="percent">10%</span>
+            </div>
+            <div class="logo-slide">
+                <img src="Image/LanguagesLogo/c++.png" alt="Tool">
+                <span class="percent">30%</span>
+            </div>
+
+            <div class="logo-slide"><img src="Image/LanguagesLogo/lua.png" alt="Tool"><span class="percent">80%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/python.png" alt="Tool"><span class="percent">80%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/css.png" alt="Tool"><span class="percent">100%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/php.png" alt="Tool"><span class="percent">20%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/html.png" alt="Tool"><span class="percent">100%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/csharp.png" alt="Tool"><span class="percent">20%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/javascript.png" alt="Tool"><span class="percent">100%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/java.png" alt="Tool"><span class="percent">50%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/perl.png" alt="Tool"><span class="percent">10%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/c++.png" alt="Tool"><span class="percent">30%</span></div>
+
+            <div class="logo-slide"><img src="Image/LanguagesLogo/lua.png" alt="Tool"><span class="percent">80%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/python.png" alt="Tool"><span class="percent">80%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/css.png" alt="Tool"><span class="percent">100%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/php.png" alt="Tool"><span class="percent">20%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/html.png" alt="Tool"><span class="percent">100%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/csharp.png" alt="Tool"><span class="percent">20%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/javascript.png" alt="Tool"><span class="percent">100%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/java.png" alt="Tool"><span class="percent">50%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/perl.png" alt="Tool"><span class="percent">10%</span></div>
+            <div class="logo-slide"><img src="Image/LanguagesLogo/c++.png" alt="Tool"><span class="percent">30%</span></div>
+
+        </div>
+    </div>
+
+</section>
+
+<section id="project" class="full-section">
+    <div class="project-container">
+        
+        <div class="project-intro">
+            <h2 class="intro-title">WELCOME TO MY <span style="color:#00e676">PROJECTS</span></h2>
+            <p class="intro-subtitle">HOVER THE CARD TO SEE ITS DETAILS</p>
+        </div>
+
+        <div class="project-main-content content-hidden">
+            
+            <div class="project-header-small fade-on-open">
+                <h2>MY <span style="color:#00e676">PROJECTS</span></h2>
+                <div class="title-line-small"></div>
+            </div>
+
+            <div class="cards-deck">
+                
+                <div class="project-card" data-index="0" 
+                     data-img1="Image/Card1-1.png" data-img2="Image/Card1-2.png"
+                     data-demo="#" data-github="#"
+                     data-panel-desc="My first project in senior high school in 2023 was a library system. We successfully created a working project for our school, SJC, where users could search for books online and find any details they needed about the library. This project was where I started my journey in HTML and CSS!">
+                    <img class="img-front" src="Image/Card1.png" alt="Front">
+                    <img class="img-back" src="Image/CardBack.jpg" alt="Back">
+                    <div class="card-floating-info"><h3>SJC E-LIBRARY</h3><p>A website where you can find answers to anything and read your favorite books!</p></div>
+                </div>
+
+                <div class="project-card" data-index="1" 
+                     data-img1="Image/Card2-1.png" data-img2="Image/Card2-2.png"
+                     data-demo="#" data-github="#"
+                     data-panel-desc="This is a working project—The Test Project game—that I made to practice my game programming skills. I used it to learn more about features like collision and other details that can help me improve. I created this project to prepare myself for school and to get better at game development.">
+                    <img class="img-front" src="Image/Card2.png" alt="Front">
+                    <img class="img-back" src="Image/CardBack.jpg" alt="Back">
+                    <div class="card-floating-info"><h3>DARKNESS MINESWEEPER</h3><p>THE GAMES PROBLEM SOLVING WITH CHALLENGING DARKNESS WITH ABILITIES</p></div>
+                </div>
+
+                <div class="project-card" data-index="2" 
+                     data-img1="Image/Card3-1.jpg" data-img2="Image/Card3-2.jpg"
+                     data-demo="#" data-github="#"
+                     data-panel-desc="Our second project (DREAM CATCHER) was a horror 2d platforms game we made using Python. It was my first time creating a game, and I’m still learning, but I really tried my best so I could participate in CITEXPO. I only got 2nd place, but at least I gave it my all and gained more experience.">
+                    <img class="img-front" src="Image/Card3.jpg" alt="Front">
+                    <img class="img-back" src="Image/CardBack.jpg" alt="Back">
+                    <div class="card-floating-info"><h3>DREAM CATCHER</h3><p>HORROR GAME MAKES YOU FEAR BY KILLING RELATIVES</p></div>
+                </div>
+
+                <div class="project-card" data-index="3" 
+                     data-img1="Image/Card4-1.jpg" data-img2="Image/Card4-3.png" data-img3="Image/Card4-2.png"
+                     data-demo="#" data-github="#"
+                     data-panel-desc="This was my biggest project—my first HTML and CSS program in senior high school at Saint Jude College. Thanks to our professor, Sir Dawal, for giving us this project. It helped me learn a lot and improve my HTML and CSS skills!">
+                    <img class="img-front" src="Image/Card4.jpg" alt="Front">
+                    <img class="img-back" src="Image/CardBack.jpg" alt="Back">
+                    <div class="card-floating-info"><h3>CYBERSECURITY WEBSITE</h3><p>TEAM MAKES YOUR WEBSITE 100% SECURED SAFE</p></div>
+                </div>
+
+                <div class="project-card" data-index="4" 
+                     data-img1="Image/Card5-2.jpg" data-img2="Image/Card5-1.jpg"
+                     data-demo="https://scriptency.itch.io/grip2d-platform-adventure-game" data-github="#"
+                     data-panel-desc="We successfully developed our major game project for the CITEXPO event in 2025. The whole experience taught me a lot—from thinking of ideas, designing the game, creating characters, and fixing problems in the code. It really helped me improve my coding skills and learn how to work better with a group. When we presented our project, everything we worked hard for finally paid off. Winning 1st place made the moment even more special. I’m very thankful to my groupmates for helping with the assets and the game’s lore. This experience will always remind me that teamwork and effort can lead to great results.">
+                    <img class="img-front" src="Image/Card5.jpg" alt="Front">
+                    <img class="img-back" src="Image/CardBack.jpg" alt="Back">
+                    <div class="card-floating-info"><h3>GRIP</h3><p>THE CHALLENGING GAME MAKES YOU SWEAT!</p></div>
+                </div>
+
+                <div class="project-card hidden-card" data-index="5" 
+                     data-img1="Image/Card6-1.png" data-img2="Image/Card6-2.png"
+                     data-demo="https://www.roblox.com/games/5675419718/Survival-Minigames" data-github="#"
+                     data-panel-desc="I created a Roblox game called Survival Minigames. In the game, players need to get at least 3 wins before the biggest round starts to become the champion. I made this game because Roblox was my childhood favorite, and I wanted to try making games in Roblox while learning programming with Lua. This project gave me a lot of experience and helped me improve my programming skills. Try playing it now!">
+                    <img class="img-front" src="Image/Card6.png" alt="Front">
+                    <img class="img-back" src="Image/CardBack.jpg" alt="Back">
+                    <div class="card-floating-info"><h3>Survival Minigames</h3><p>A Roblox game that generates random challenges for players to complete.</p></div>
+                </div>
+
+                <div class="project-card hidden-card" data-index="6" 
+                     data-img1="Image/Logo.jpeg" data-img2="Image/Logo.jpeg"
+                     data-demo="#" data-github="#"
+                     data-panel-desc="NOTHING YOU CAN SEE HERE">
+                    <img class="img-front" src="Image/Logo.jpeg" alt="Front">
+                    <img class="img-back" src="Image/CardBack.jpg" alt="Back">
+                    <div class="card-floating-info"><h3>Unknown</h3><p>Placeholder</p></div>
+                </div>
+
+                <div class="project-card hidden-card" data-index="7" 
+                     data-img1="Image/Logo.jpeg" data-img2="Image/Logo.jpeg"
+                     data-demo="#" data-github="#"
+                     data-panel-desc="NOTHING YOU CAN SEE HERE">
+                    <img class="img-front" src="Image/Logo.jpeg" alt="Front">
+                    <img class="img-back" src="Image/CardBack.jpg" alt="Back">
+                    <div class="card-floating-info"><h3>Unknown</h3><p>Placeholder</p></div>
+                </div>
+
+                <div class="project-card hidden-card" data-index="8" 
+                     data-img1="Image/Logo.jpeg" data-img2="Image/Logo.jpeg"
+                     data-demo="#" data-github="#"
+                     data-panel-desc="NOTHING YOU CAN SEE HERE">
+                    <img class="img-front" src="Image/Logo.jpeg" alt="Front">
+                    <img class="img-back" src="Image/CardBack.jpg" alt="Back">
+                    <div class="card-floating-info"><h3>Unknown</h3><p>Placeholder</p></div>
+                </div>
+
+                <div class="project-card hidden-card" data-index="9" 
+                     data-img1="Image/Logo.jpeg" data-img2="Image/Logo.jpeg"
+                     data-demo="#" data-github="#"
+                     data-panel-desc="NOTHING YOU CAN SEE HERE">
+                    <img class="img-front" src="Image/Logo.jpeg" alt="Front">
+                    <img class="img-back" src="Image/CardBack.jpg" alt="Back">
+                    <div class="card-floating-info"><h3>Unknown</h3><p>Placeholder</p></div>
+                </div>
+            </div>
+        </div>
+
+            <button id="prev-btn" class="nav-btn btn-left fade-on-open">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button id="next-btn" class="nav-btn btn-right fade-on-open">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+
+            <div class="page-indicators fade-on-open">
+                <span id="ind-p1" class="page-text active-page">PAGE 1</span>
+                <span class="page-divider">/</span>
+                <span id="ind-p2" class="page-text">PAGE 2</span>
+            </div>
+
+            <div class="project-details-panel">
+                <button class="back-btn" id="close-details">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+                    BACK
+                </button>
+                
+                <h2 id="detail-title">PROJECT TITLE</h2>
+                
+                <p id="detail-desc">Description...</p>
+                
+                <div class="detail-images-row">
+                    <img id="det-img1" src="Image/Logo.jpeg" alt="Screenshot 1">
+                    <img id="det-img2" src="Image/Logo.jpeg" alt="Screenshot 2">
+                </div>
+
+                <div class="detail-actions">
+                    <a href="#" class="action-btn demo-btn" id="link-demo" target="_blank">LIVE DEMO</a>
+                    <a href="#" class="action-btn github-btn" id="link-github" target="_blank">GITHUB</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+</section>
+
+<section id="certificates" class="full-section">
+    <div class="cert-container">
+        
+        <div class="cert-header">
+            <h2 class="section-title">MY <span style="color:#00e676">CERTIFICATES</span></h2>
+            <p class="cert-subtitle">Credentials & Achievements</p>
+        </div>
+
+        <div class="cert-grid">
+            
+            <div class="cert-card">
+                <div class="cert-img-wrapper">
+                    <img src="Image/Certificate1.jpg" alt="Certificate 1" class="cert-img">
+                    <div class="cert-overlay">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <h3>HTML AND CSS CODECRED CONTEST</h3>
+                    <p>I applied to the website codecred.dev by taking a test that measured my skills in HTML and CSS.</p>
+                    <span class="cert-date">2024</span>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-img-wrapper">
+                    <img src="Image/Certificate2.jpg" alt="Certificate 2" class="cert-img">
+                    <div class="cert-overlay">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <h3>CITEXPO GAME CONTEST - 1ST PLACE:GRIP</h3>
+                    <p>In Saint Jude College Manila, there was a CITEXPO event where students created a major game project, and the winner received a certificate.</p>
+                    <span class="cert-date">2025</span>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-img-wrapper">
+                    <img src="Image/Certificate3.jpg" alt="Certificate 3" class="cert-img">
+                    <div class="cert-overlay">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00e676" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <h3>SECTION OF TOP1 Game Creative - 1ST PLACE:GRIP</h3>
+                    <p>Our professor challenged us to create a game, and those who finished their game would participate in the CITEXPO contest representing our section. In Saint Jude College Manila</p>
+                    <span class="cert-date">2025</span>
+                </div>
+            </div>  
+
+        </div>
+    </div>
+</div> <div class="cert-connect-wrapper">
+            <div class="social-icons centered-icons">
+                
+                <a href="discordapp.com/users/430571691723325462" class="social-link discord">
+                    <img src="Image/MessageLogo/discord.png" alt="Discord">
+                </a>
+
+                <a href="#" class="social-link github">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+
+                <a href="https://www.facebook.com/scriptency/" class="social-link facebook">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+
+                <a href="#" class="social-link gchat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </a>
+
+                <a href="https://www.instagram.com/angelotyson4/" class="social-link instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+
+            </div>
+        </div>
+
+    </div> </section>
+
+
+<div id="lightbox-overlay" class="lightbox">
+    <button id="lightbox-close" class="lightbox-close-btn">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <img id="lightbox-img" src="" alt="Zoomed Project">
+</div>
+
+    </main>
+
+    <div id="contact-ui">
+        <h2 class="ui-title">Connect With Me</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/angelotyson4/" class="social-link instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-link github">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.facebook.com/scriptency/" class="social-link facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-link gchat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </a>
+            <a href="discordapp.com/users/430571691723325462" class="social-link discord">
+                <img src="Image/MessageLogo/discord.png" alt="Discord">
+            </a>
+        </div>
+        <hr class="ui-divider">
+        <div style="margin-top: 10px; line-height: 1.8;">
+            <h2 class="ui-title">Contact Info</h2>
+            <p>Feel free to reach out through any of these platforms.</p>
+            <div class="contact-details">
+                <strong>Location:</strong> 19 Araw Street Sangandaan Project 8 Quezon City <br>
+                <strong>Phone:</strong> +639663749798<br>
+                <strong>Email:</strong> geronimomarkangelo6@gmail.com
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-ui2">
+        <h2 class="form-title">Get in Touch</h2>
+        <p class="form-desc">Have something to discuss? Send me a message and let's talk.</p>
+        <div class="input-group">
+            <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00572f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+            <input type="text" placeholder="Your Name">
+        </div>
+        <div class="input-group">
+            <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00572f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+            <input type="email" placeholder="Your Email">
+        </div>
+        <div class="input-group message-box">
+            <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00572f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div>
+            <textarea placeholder="Your Message"></textarea>
+        </div>
+        <button class="send-btn">SEND MESSAGE</button>
+    </div>
+
+    <div id="mascot-container">
+    
+    <div id="dialogue-box">
+        <span id="dialogue-text"></span>
+    </div>
+
+    <img src="Image/Idle.png" alt="Mascot Idle" id="mascot-idle" class="mascot-img">
+
+    <img src="Image/Talk.png" alt="Mascot Talking" id="mascot-talking" class="mascot-img">
+
+    <img src="Image/Smash.png" alt="Mascot Reaction" id="mascot-reaction" class="mascot-img">
+
+    <img src="Image/Angry.png" alt="Mascot Transition" id="mascot-transition" class="mascot-img">
+
+    </div>
+
+    <div class="fixed-watermark">Markangelo T. Geronimo</div>
+
+    <script src="MainScript.js"></script>
+
+<div id="loader-wrapper">
+        <div class="loader-box">
+            
+            <div class="logo-container">
+                <img src="Image/Logo.jpeg" alt="Loading..." class="loader-logo">
+            </div>
+
+            <svg class="loader-svg" viewBox="0 0 100 100">
+                <circle class="loader-circle-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="loader-circle-progress" cx="50" cy="50" r="45"></circle>
+            </svg>
+
+        </div>
+        
+        <div class="loader-text">INITIALIZING...</div>
+    </div>
+
+</body>
+</html>
